@@ -6,6 +6,6 @@ It uses the Quality score (QUAL) of the VCF file to filter. Also, discards any S
 Written in python 2.7
 
 For options, please use:
-'''
+```
 python filter_SNP_quality.py --help
-'''
+```
