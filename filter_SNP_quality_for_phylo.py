@@ -1,4 +1,10 @@
-import sys
+'''
+To filter high-quality SNPs from a VCF file. It uses the Quality score (QUAL) of the VCF file to filter. Also, discards any SNPs with mixed or ambiguous bases. 
+Although, we have not used these criteria. But, with little modification, the script can also filter using Mapping quality (MQ) and Read_ratio (from DP4) data in a VCF file. 
+
+Written by Arif Tanmoy (arif.tanmoy@chrfbd.org).
+Last updated: 01 JUNE 2021
+'''
 from argparse import (ArgumentParser, FileType)
 
 def parse_args():
@@ -36,4 +42,3 @@ with open(args.output, 'w') as output:
 			else:
 				continue
 output.close()
-
